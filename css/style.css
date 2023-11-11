@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
 body {
   display: flex;
   justify-content:center ;
   align-items: center;
   min-height: 100vh;
   background-color: hsl(234, 29%, 20%);
-  font-family:  
-
+  font-family: "Roboto";
 }
 
 .card {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 700px;
   background-color: white;
   padding: 20px;
@@ -17,11 +21,13 @@ body {
 }
 
 .left {
- width: 60%;
+/* width: 60%; */
+ padding: 15px;
 }
 
 .right {
-  width: 40%;
+  /* width: 40%; */
+  padding: 10px;
 }
 
 .right img {
@@ -29,11 +35,15 @@ body {
 }
 
 ul {
-  list-style: url(./assets/images/ion-success.svg);
+  list-style-image: url("..assets/images/icon-success.svg");
+  font-size: 16px;
+  text-align: left;
 }
 
 li {
   margin-bottom: 10px;
+  color:  hsl(234, 29%, 20%);
+  text-align: left;
   
 }
 
@@ -45,8 +55,9 @@ form {
 
 label {
   margin-bottom: 10px;
+  font-size: 10px;
+  color:  hsl(234, 29%, 20%);
 }
-
 
 input {
   padding: 10px 20px;
@@ -64,3 +75,35 @@ button {
  background-color: hsl(235, 18%, 26%);
  border-radius: 5px;
 }
+
+h1 {
+  font-size: 30px;
+  color:  hsl(234, 29%, 20%);
+}
+
+p {
+  font-size: 16px;
+  color:  hsl(234, 29%, 20%);
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+   
+   flex-direction: column-reverse; 
+   padding: 0;
+   width: 95%;
+    
+  }
+
+  .right {
+    padding: 0;
+  }
+
+  .right img {
+    content: url("../assets/images/illustration-sign-up-mobile.svg");
+
+  }
+  
+} 
+  
+
